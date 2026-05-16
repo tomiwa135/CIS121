@@ -1,0 +1,226 @@
+Skip to main content
+Open
+Course status Open
+CIS121 070 - Introduction to Programming (2026 Spring)
+Course Faculty
+Details & Actions
+Roster
+View everyone in your course
+
+Class Collaborate
+Join session 
+
+Attendance
+View your attendance
+
+Books & Tools
+View course & institution tools
+
+Course Content
+Student -
+Tutoring Schedule
+Office Hours
+Use this link for online office hours by appointment. In person hours are Saturdays 10am-11am or by appointment.
+Code resources that me help you understand statements, constructs and programming concepts.
+GitHub Midterm Submission
+Due date: 3/22/26, 11:59 PM (CDT)
+Due 1/25
+Learn more about developing algorithms and writing C++ programs. Learn more about Github. Due 2/1
+In this session we will further focus on sequence construct used in programming. Due 2/8
+In this session you will learn about selection logic using the basic if statement. Due 2/15
+In this session we will learning about nested if statements. Due 2/22
+In this session you will learn about building up single relational conditions into compound relational conditions. Due 3/1
+In this session you will learn about loops and getting data from the keyboard Due 3/8
+Loops - while statement Pass by value functions Midterm Due 3/15
+Problems with Pass By Value Functions Due 3/29
+More on Pass By Reference Functions Midterm Due 4/5
+Reading Data from a File More Practice with Pass by Reference Functions Due 4/12
+For loops Introduction to Arrays, Sequential Search Due 4/19
+Dynamic Array Processing Structures Vectors Only do problem #3 in the problem set Due 4/26
+Session 13 Overview
+Structures
+Struct Construct
+Learn about using the structure construct. Also, read about struct in our text in Chapter 9. Structures are also referred to as records.
+Vectors vs Arrays
+This example show one way of making the array a more dynamic struture. Note the number of occurrences of the array is determined by the variable qty that can be changed without change the code.#include #include #include using namespace std; #define qty 10 int main() { //int qty = 10; float cost, total; int count; //cout > qty; float foo[qty] = { 0.0 }; for (count = 1; count > cost; total = +cost; foo[count - 1] = cost; } cout
+Advantages of Vectors over Arrays
+Defining and Initializing a Vactor
+Adding Elements to a Vector
+Additional Vector Methods
+Sizing and Passing Vectors to a Function
+Reading - Malik 8th Edition
+Dynamic Allocation of Array of Structures
+This link is to a free text that shows examples of vector definitions and use. The examples are rudimentary and provide a basis for understanding the advantages of vectors.
+In this folder you will review code examples that show differences between arrays and vectors. You will also see exampleof passing vectors to a function and loop constructs for traversing vectors. You will also find an example of using the structure construct. I highly recommend reviewing the examples and understanding the code. Contains examples that may help with the assignment problems.
+Session 13 Problems
+
+Session 13 Program Upload
+Due date: 4/26/26, 11:59 PM (CDT)
+End of Session 13
+User-defined objects Due 5/3
+Session 14 User Defined Objects
+Reading - Malik 8th Edition
+Classes and Objects - Another Explanation
+Alternate source for understanding how to code classes and objects,
+Video - Coding Class and Instantiating Objects
+In this folder yuou will find examples of the class (header) files and then programs (.cpp files) that instantiate the object and use it.
+Session 14 Assignment Problems
+
+Session 14 Program Upload
+Due date: 5/3/26, 11:59 PM (CDT)
+Discussion Post 14
+Due date: 5/3/26, 11:59 PM (CDT)
+What is an object. In your discussion mention class, methods and instantiation
+Reading - Malik 8th Edition
+End of Session 14
+Learn advanced class and object techniques of inheritance and overriding. Due 5/10
+Video - Inheritance C++
+Video - Function Overriding
+Starter Class (Base Class)
+Session 15 Assignment
+Due date: 5/10/26, 11:59 PM (CDT)
+Starting with the base class posted in this session, create a manager class that inherits from the base class (employee). Add a method to compute Long_Term_Bonus to be 50% of the salary. Override the bonus method to compute at 50% of the annual salary. Load the object with data. Display all methods showing your object works. Submit base class, derived class and program that tests the object here.
+End of Session 15
+Submit all programs to Github for grading. Do Final Exam Due 5/15
+Starter Class (Base Class)
+
+// create a class - definition
+
+#include<iostream>
+
+#include<string>
+
+using namespace std;
+
+class Employee
+
+{
+
+public:
+
+// function header
+
+Employee();
+
+void FirstName(string fn);
+
+string FirstName();
+
+void LastName(string ln);
+
+string LastName();
+
+void Salary(float);
+
+float Salary();
+
+float Bonus();
+
+~Employee();
+
+
+
+protected: // this could be private too
+
+string m_fn, m_ln;
+
+float m_salary;
+
+float m_bonus;
+
+
+
+};
+
+Employee::~Employee()
+
+{
+
+cout << "Goodbye" << endl;
+
+system("pause");
+
+}
+
+Employee::Employee()
+
+{
+
+// constructor method - runs when the object is instantiated
+
+m_salary = 0.00f;
+
+}
+
+void Employee::FirstName(string fn)
+
+{
+
+// get data from the program and protect it
+
+m_fn = fn;
+
+}
+
+string Employee::FirstName()
+
+{
+
+return m_fn;
+
+}
+
+void Employee::LastName(string ln)
+
+{
+
+// get data from the program and protect it
+
+m_ln = ln;
+
+}
+
+string Employee::LastName()
+
+{
+
+return m_ln;
+
+}
+
+void Employee::Salary(float s)
+
+{
+
+m_salary = s;
+
+}
+
+float Employee::Salary()
+
+{
+
+return m_salary;
+
+}
+
+float Employee::Bonus()
+
+{
+
+if (m_salary > 100000.00)
+
+m_bonus = m_salary * 0.20f;
+
+else
+
+m_bonus = m_salary*0.10f;
+
+
+
+return m_bonus;
+
+}
+
+×
+Download Alternative Formats

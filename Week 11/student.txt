@@ -1,0 +1,5 @@
+Jones             I             15.00
+Baker             O             20.00
+Davis             I             10.00
+Michaels          O             12.00
+Baez              I             12.00
